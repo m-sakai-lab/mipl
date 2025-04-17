@@ -1,39 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MIP Lab.</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
-    .banner {
-      background: url('banner.jpg') no-repeat center center;
-      background-size: cover;
-      height: 200px;
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #004080;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo-container {
       text-align: center;
+      margin-top: 1rem;
+    }
+
+    .logo-container img {
+      width: 250px;
+      max-width: 80%;
+      height: auto;
+    }
+
+    .lab-name {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
       color: white;
+      background-color: #004080;
+      padding: 0.75rem 0;
+      margin: 0;
+    }
+
+    .banner-text {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      background-color: #004080; /* 濃い紫系 */
+      padding: 1rem 0;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-      font-weight: bold;
+      background-color: #004080;
+      flex-wrap: wrap;
     }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #00264d;
+    }
+
     .external-links {
       text-align: center;
       margin-top: 1rem;
     }
+
     .external-links a {
       margin: 0 10px;
       color: #004080;
       text-decoration: none;
       font-weight: bold;
     }
+
+    main {
+      padding: 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+      background-color: white;
+    }
+
+    section h2 {
+      color: #004080;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="banner">Multimodal Information Processing Laboratory@Nihon University</div>
+    <!-- ロゴ -->
+    <div class="logo-container">
+      <img src="mip_logo.png" alt="MIP Lab Logo">
+    </div>
 
+    <!-- ラボ名 -->
+    <div class="lab-name">SAKAI Lab.</div>
+
+    <!-- 研究室名（はっきり表示） -->
+    <div class="banner-text">
+      Multimodal Information Processing Laboratory@Nihon University
+    </div>
+
+    <!-- ナビゲーション -->
     <nav>
       <ul>
         <li><a href="index.html">About</a></li>
@@ -46,6 +137,8 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- 外部リンク -->
     <div class="external-links">
       <a href="https://university.example.com" target="_blank">University</a>
       <a href="https://department.example.com" target="_blank">Department</a>
@@ -55,7 +148,14 @@
   <main>
     <section>
       <h2>About the Lab</h2>
-      <p>Humans sense multiple pieces of information using modalities known as the five senses. This type of information is called multimodal information. In the case of computers, modalities include video, audio, location information, behavioral information from acceleration sensors, and biometric information such as electrocardiograms, and artificial intelligence is used to grasp situations and make predictions. In this laboratory, we aim to use this type of multimodal information to discover and solve problems in our everyday lives.</p>
+      <p>
+        Humans sense multiple pieces of information using modalities known as the five senses.
+        This type of information is called multimodal information. In the case of computers,
+        modalities include video, audio, location information, behavioral information from
+        acceleration sensors, and biometric information such as electrocardiograms, and artificial
+        intelligence is used to grasp situations and make predictions. In this laboratory, we aim
+        to use this type of multimodal information to discover and solve problems in our everyday lives.
+      </p>
     </section>
   </main>
 
